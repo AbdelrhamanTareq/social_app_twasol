@@ -1,0 +1,117 @@
+{
+    "app_title": "Tawaaasol",
+
+    "email_label_text": "E-mail",
+    "email_error_text": "E-mail is not valied",
+    "pass_label_text": "Password",
+    "pass_error_text": "Password too short",
+    "username_label_text": "Username",
+    "username_error_text": "Username too short",
+    
+    "signup_header": "Sign Up!",
+    "signup_main_text": "Create an account so you can commincate with other people and find new firends",
+    "signup_create_button_text": "Create An Account",
+    "signup_or_continue_with": "or continue with",
+    "signup_have_account": "Already Have an account?",
+    "signup_signin_iniested": "sign in",
+
+    "signin_header": "Sign In Now!",
+    "signin_main_text": "You have already an account?\n Great sign in right!",
+    "signin_forget_pass": "Forget Password",
+    "signin_create_button_text": "Login",
+    "signin_or_continue_with": "or continue with",
+    "signin_have_account": "Not A Member?",
+    "signin_signup_iniested": "Join Now",
+
+
+    "Add_story": "Add story",
+    "Photo": "Photo",
+    "Video": "Video",
+    
+
+
+
+
+
+
+    "create_post":"Create Post",
+    "photo":"Photo",
+    "video":"Video",
+    "add_a_caption":"Add a caption",
+    "caption":"Caption",
+    "upload":"Upload",
+
+    "camera":"Camera",
+    "gallery":"Gallery",
+    "cancel":"Cancel",
+
+
+
+
+    "add_story":"Add Story",
+    "Add_story_description":"Add story description",
+    "Add_media":"Add media",
+
+
+
+    "Comments":"Comments",
+    "Search":"Search",
+    "Write_a_comment!":"Write a comment!",
+    "Posting....":"Posting....",
+
+
+    "Notification":"Notification",
+    "your_post":"your post",
+    "on_your_post":"on your post",
+    "start_following_you":"start following you",
+    "like":"like",
+    "comment":"comment",
+    "follow":"follow",
+
+    "Posts":"Posts",
+    "Followers":"Followers",
+    "Following":"Following",
+    "Follow":"Follow",
+    "unFollow":"Un Follow",
+
+
+    "search_error":"Search text can't be empty",
+    "People":"People",
+    "Post":"Post",
+    "No_data_Start":"No data! Start search",
+   
+    
+    
+
+
+
+
+
+    "Profile":"Profile",
+    "Gender":"Gender",
+    "Male":"Male",
+    "Female":"Female",
+    "Bio":"Bio",
+    "Edit":"Edit",
+    "Edit_Profile":"Edit Profile",
+
+    "sign_out":"Sign out",
+
+
+    
+
+
+    "setting":"Setting",
+    "Account":"Account",
+    "Privacy_Policey":"Privacy Policey",
+    "About":"About",
+    "Langauge":"Langauge",
+    "Dark_Mode":"Dark Mode",
+    "English":"English",
+    "Arabic":"Arabic",
+
+    "likeb_by":"liked",
+    "and":"and",
+    "others":"others"
+    
+}

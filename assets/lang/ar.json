@@ -1,0 +1,93 @@
+{
+    "app_title": "تـــواصـــل",
+
+    "email_label_text": "البريد الالكتروني",
+    "email_error_text": "البريد الالكتروني غير صالح",
+    "pass_label_text": "كلمة المرور",
+    "pass_error_text": "كلمة المرور قصيرة",
+    "username_label_text": "اسم المستخدم",
+    "username_error_text": "اسم المستخدم قصير",
+
+    "signup_header": "تسجيل حساب جديد",
+    "signup_main_text": "قم بانشاء حساب جديد حتي تتمكن من التواصل مع الاخرين و ايجاد اصدقاء جدد",
+    "signup_create_button_text": "انشاء حساب",
+    "signup_or_continue_with": "او اكمل عن طريق",
+    "signup_have_account": "لديك حساب بالفعل؟",
+    "signup_signin_iniested": "تسجيل دخول",
+
+    "signin_header": "سجل الدخول الان",
+   
+    "signin_main_text": "لديك حساب بالفعل ؟ \n رائع سجل دخولك ",
+    "signin_forget_pass": "نسيت كلمة المرور",
+    "signin_create_button_text": "الدخول",
+    "signin_or_continue_with": "او استمر عبر",
+    "signin_have_account": "لست عضو؟",
+    "signin_signup_iniested": "انضم الان",
+
+    "Add_story": "اضف قصة",
+    "Photo": "صور",
+    "Video": "فيديو",
+    
+    "create_post":"انشاء منشور",
+    "photo":"صور",
+    "video":"فيديو",
+    "add_a_caption":"اضف تعليق",
+    "caption":"تعليق",
+    "upload":"نشر",
+
+    "camera":"الكاميرا",
+    "gallery":"الاستوديو",
+    "cancel":"الغاء",
+
+    "add_story":"اضف قصة",
+    "Add_story_description":"اضف تعليق علي القصة",
+    "Add_media":"اضف صورة او فيديو",
+
+    "Comments":"تعليق",
+    "Search":"بحث",
+    "Write_a_comment!":"اكتب تعليق!",
+    "Posting....":"نشر...",
+
+
+    "Notification":"الاشعارات",
+    "your_post":"ب منشورك",
+    "on_your_post":"علي منشورك",
+    "start_following_you":"قام بمتابعتك",
+    "like":"اعجب",
+    "comment":"علق",
+    "follow":"follow",
+
+    "Posts":"منشور",
+    "Followers":"يتابع",
+    "Following":"متابعين",
+    "Follow":"متابعة",
+    "unFollow":"الغاء المتابعة",
+
+    "search_error":"خانة البحث لا يمكن ان تكون فارغة",
+    "People":"اشخاص",
+    "Post":"منشورات",
+    "No_data_Start":"ابدأ البحث",
+
+    "Profile":"الحساب الشخصي",
+    "Gender":"النوع",
+    "Male":"ذكر",
+    "Female":"انثي",
+    "Bio":"المعلومات الشخصية",
+    "Edit":"تعديل",
+    "Edit_Profile":"تعديل الحساب",
+
+    "sign_out":"تسجيل الخروح",
+
+    "setting":"الاعدادت",
+    "Account":"الحساب الشخصي",
+    "Privacy_Policey":"سياسة الخصوصية",
+    "About":"عنا",
+    "Langauge":"اللغة",
+    "Dark_Mode":"الوضع الليلي",
+    "English":"الانجليزية",
+    "Arabic":"العربية",
+
+    "likeb_by":"اعجب",
+    "and":"و",
+    "others":"اخرين"
+}
