@@ -114,8 +114,7 @@ class _CommentsScreenState extends State<CommentsScreen> {
                                 labelText: getTranslated(context, 'Search'),
                                 radiuas: 10.0.r,
                                 validator: (val) {},
-                                prefixIcon:
-                                    const FaIcon(FontAwesomeIcons.search),
+                                prefixIcon: const Icon(Icons.search),
                                 controller: _searchController,
                               ),
                             ),

@@ -13,6 +13,7 @@ import 'package:social_app/logic/states/posts_states.dart';
 import 'package:social_app/logic/states/story_states.dart';
 import 'package:social_app/shared/app_constant.dart';
 import 'package:social_app/ui/routes/route.dart';
+import 'package:social_app/ui/screens/add_story_screen.dart';
 
 import 'package:social_app/ui/screens/edit_profile_screen.dart';
 
@@ -219,7 +220,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                                   children: [
                                                     BuildTextButton(
                                                       widget: TextButton(
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          AppRoute.navTo(
+                                                              context: context,
+                                                              screenWidget: BlocProvider.value(
+                                                                  value: StoryCubit
+                                                                      .get(
+                                                                          context),
+                                                                  child:
+                                                                      AddStoryScreen()));
+                                                        },
                                                         child: Text(
                                                           getTranslated(context,
                                                               "add_story"),
