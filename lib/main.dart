@@ -27,6 +27,7 @@ import 'package:social_app/logic/cubits/auth_cubit.dart';
 import 'package:social_app/logic/states/settigns_states.dart';
 import 'package:social_app/shared/app_constant.dart';
 import 'package:social_app/shared/cache_helper.dart';
+import 'package:social_app/ui/routes/route.dart';
 
 import 'package:social_app/ui/screens/wrapper_screen.dart';
 
@@ -52,7 +53,20 @@ void main() async {
   // runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final AppRoute _appRoute = AppRoute();
+
+  @override
+  void dispose() {
+    _appRoute.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     // final _user = AuthCubits.get(context).cureentUser;
@@ -88,8 +102,8 @@ class MyApp extends StatelessWidget {
                     : AppTheme.darkTheme,
                 darkTheme: AppTheme.darkTheme,
                 debugShowCheckedModeBanner: false,
-                home: const WrapperScreen(),
-
+                // home: const WrapperScreen(),
+                onGenerateRoute: _appRoute.appRouter,
                 locale: (AppConstant.lang == "Arabic")
                     ? const Locale('ar')
                     : const Locale('en'),

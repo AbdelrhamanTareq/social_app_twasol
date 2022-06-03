@@ -60,36 +60,40 @@ class BuildPostWidget extends StatelessWidget {
                 leading: InkWell(
                   onTap: () {
                     if (!_isOwnerScreen) {
-                      AppRoute.navTo(
-                        context: context,
-                        screenWidget: Builder(builder: (_) {
-                          return MultiBlocProvider(
-                            providers: [
-                              BlocProvider<PostsCubits>.value(
-                                value: PostsCubits.get(context),
-                              ),
-                              BlocProvider<StoryCubit>.value(
-                                value: StoryCubit.get(context),
-                              ),
-                              BlocProvider<FollowCubits>.value(
-                                value: FollowCubits.get(context),
-                              ),
-                              BlocProvider<NotificationCubit>.value(
-                                value: NotificationCubit.get(context),
-                              ),
-                            ],
-                            child: PostOwnerProfile(
-                              ownerId: _data[index].ownerId!,
-                            ),
-                          );
-                          // return BlocProvider<PostsCubits>.value(
-                          //   value: _blocValue,
-                          //   child: PostOwnerProfile(
-                          //     ownerid: _data[index].ownerId!,
-                          //   ),
-                          // );
-                        }),
-                      );
+                      AppRoute.navToWithName(
+                          context: context,
+                          screenName: '/post_owner_proifle',
+                          arguments: _data[index].ownerId!);
+                      // AppRoute.navTo(
+                      //   context: context,
+                      //   screenWidget: Builder(builder: (_) {
+                      //     return MultiBlocProvider(
+                      //       providers: [
+                      //         BlocProvider<PostsCubits>.value(
+                      //           value: PostsCubits.get(context),
+                      //         ),
+                      //         BlocProvider<StoryCubit>.value(
+                      //           value: StoryCubit.get(context),
+                      //         ),
+                      //         BlocProvider<FollowCubits>.value(
+                      //           value: FollowCubits.get(context),
+                      //         ),
+                      //         BlocProvider<NotificationCubit>.value(
+                      //           value: NotificationCubit.get(context),
+                      //         ),
+                      //       ],
+                      //       child: PostOwnerProfile(
+                      //         ownerId: _data[index].ownerId!,
+                      //       ),
+                      //     );
+                      //     // return BlocProvider<PostsCubits>.value(
+                      //     //   value: _blocValue,
+                      //     //   child: PostOwnerProfile(
+                      //     //     ownerid: _data[index].ownerId!,
+                      //     //   ),
+                      //     // );
+                      //   }),
+                      // );
                     }
                   },
                   child: CircleAvatar(
@@ -196,25 +200,34 @@ class BuildPostWidget extends StatelessWidget {
                   SizedBox(width: 7.w),
                   IconButton(
                     onPressed: () {
-                      AppRoute.navTo(
-                        context: context,
-                        screenWidget: MultiBlocProvider(
-                          providers: [
-                            BlocProvider<CommentsCubits>.value(
-                              value: CommentsCubits.get(context),
-                            ),
-                            BlocProvider.value(
-                              value: NotificationCubit.get(context),
-                            ),
-                          ],
-                          child: CommentsScreen(
-                            postId: _data[index].id!,
-                            commentOwnerId: _userData.uid!,
-                            commentOwnerImage: _userData.imageUrl!,
-                            commentOwnerUsername: _userData.username!,
-                          ),
-                        ),
-                      );
+                      AppRoute.navToWithName(
+                          context: context,
+                          screenName: '/comments',
+                          arguments: {
+                            "postId": _data[index].id!,
+                            "commentOwnerId": _userData.uid!,
+                            "commentOwnerImage": _userData.imageUrl!,
+                            "commentOwnerUsername": _userData.username!,
+                          });
+                      // AppRoute.navTo(
+                      //   context: context,
+                      //   screenWidget: MultiBlocProvider(
+                      //     providers: [
+                      //       BlocProvider<CommentsCubits>.value(
+                      //         value: CommentsCubits.get(context),
+                      //       ),
+                      //       BlocProvider.value(
+                      //         value: NotificationCubit.get(context),
+                      //       ),
+                      //     ],
+                      //     child: CommentsScreen(
+                      //       postId: _data[index].id!,
+                      //       commentOwnerId: _userData.uid!,
+                      //       commentOwnerImage: _userData.imageUrl!,
+                      //       commentOwnerUsername: _userData.username!,
+                      //     ),
+                      //   ),
+                      // );
                     },
                     icon: const FaIcon(FontAwesomeIcons.comment),
                   ),

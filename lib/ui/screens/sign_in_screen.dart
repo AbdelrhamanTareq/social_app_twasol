@@ -33,7 +33,8 @@ class SignInScreen extends StatelessWidget {
       if (response != null) {
         AppRoute.navAndFinish(
           context: context,
-          screenWidget: const MainScreen(),
+          // screenWidget: const MainScreen(),
+          screenWidget: const MainScreen1(),
         );
       }
       //     .then((value) {
@@ -183,7 +184,8 @@ class SignInScreen extends StatelessWidget {
                                                     AppRoute.navAndFinish(
                                                   context: context,
                                                   screenWidget:
-                                                      const MainScreen(),
+                                                      // const MainScreen(),
+                                                      const MainScreen1(),
                                                 ),
                                               );
                                         },
@@ -209,7 +211,8 @@ class SignInScreen extends StatelessWidget {
                                                     AppRoute.navAndFinish(
                                                   context: context,
                                                   screenWidget:
-                                                      const MainScreen(),
+                                                      // const MainScreen(),
+                                                      const MainScreen1(),
                                                 ),
                                               );
                                         },

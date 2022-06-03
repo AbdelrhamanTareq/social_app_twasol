@@ -92,10 +92,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         IconButton(
                           onPressed: () {
-                            AppRoute.navTo(
-                              context: context,
-                              screenWidget: const SettingScreen(),
-                            );
+                            // AppRoute.navTo(
+                            //   context: context,
+                            //   screenWidget: const SettingScreen(),
+                            // );
+                            AppRoute.navToWithName(
+                                context: context, screenName: '/setting');
                           },
                           icon: const FaIcon(FontAwesomeIcons.cog),
                         ),
@@ -146,11 +148,12 @@ class HomeScreen extends StatelessWidget {
   InkWell _buildOwnerAddStory(BuildContext context, UserModel _userData) {
     return InkWell(
       onTap: () {
-        AppRoute.navTo(
-          context: context,
-          screenWidget: BlocProvider<StoryCubit>.value(
-              value: StoryCubit.get(context), child: AddStoryScreen()),
-        );
+        // AppRoute.navTo(
+        //   context: context,
+        //   screenWidget: BlocProvider<StoryCubit>.value(
+        //       value: StoryCubit.get(context), child: AddStoryScreen()),
+        // );
+        AppRoute.navToWithName(context: context, screenName: '/add_story');
       },
       child: SizedBox(
         height: 145.h,
@@ -213,16 +216,25 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) => InkWell(
                 onTap: () {
-                  AppRoute.navTo(
-                      context: context,
-                      screenWidget: BlocProvider.value(
-                        value: StoryCubit.get(context),
-                        child: StorySceen(
-                          storyId: _storyModelList[index].ownerId,
-                          storyUsername: _userStoryDataList[index].username!,
-                          storyDate: _storyModelList[index].dateTime!,
-                        ),
-                      ));
+                  // AppRoute.navTo(
+                  //     context: context,
+                  //     screenWidget: BlocProvider.value(
+                  //       value: StoryCubit.get(context),
+                  //       child: StorySceen(
+                  //         storyId: _storyModelList[index].ownerId,
+                  //         storyUsername: _userStoryDataList[index].username!,
+                  //         storyDate: _storyModelList[index].dateTime!,
+                  //       ),
+                  //     ));
+                  AppRoute.navToWithName(
+                    context: context,
+                    screenName: '/story',
+                    arguments: {
+                      "storyId": _storyModelList[index].ownerId,
+                      "storyUsername": _userStoryDataList[index].username!,
+                      "storyDate": _storyModelList[index].dateTime!
+                    },
+                  );
                 },
                 child: Padding(
                   padding: EdgeInsets.only(left: 15.w, right: 10.w),

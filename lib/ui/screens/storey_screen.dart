@@ -44,6 +44,7 @@ class _StorySceenState extends State<StorySceen> {
 
   @override
   Widget build(BuildContext context) {
+    final arg = ModalRoute.of(context)!.settings.arguments;
     return
         //  BlocProvider(
         //   create: (context) => StoryCubit()..getStoryData(widget.id),
