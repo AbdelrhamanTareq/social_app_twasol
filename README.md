@@ -4,10 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-This is a social app made with flutter
+####This is a social app made with flutter
 
-Features
--bloc state mangement
+##Features
+<li/>bloc state mangement<li>
 -responsive
 -firebase backend
 -sign in and sign up with email
@@ -20,7 +20,7 @@ Features
 -add likes and comments
 
 
-App Pages
+###App Pages
 -main page (timeline)
 -add post page
 -notification page
