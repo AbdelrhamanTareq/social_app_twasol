@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -75,10 +76,15 @@ class HomeScreen extends StatelessWidget {
                       EdgeInsets.symmetric(vertical: 40.h, horizontal: 8.w),
                   child: ListTile(
                     leading: CircleAvatar(
-                      radius: 25.r,
-                      backgroundColor: Colors.amber,
-                      backgroundImage: NetworkImage(_userData.imageUrl ?? ""),
-                    ),
+                        radius: 25.r,
+                        backgroundColor: Colors.amber,
+                        backgroundImage: CachedNetworkImageProvider(
+                          _userData.imageUrl ?? "",
+                        )
+                        //  NetworkImage(
+
+                        //   _userData.imageUrl ?? ""),
+                        ),
                     title: Text(_userData.username ?? "",
                         style: Theme.of(context).textTheme.headline6
                         //  TextStyle(color: AppTheme.black),
@@ -173,7 +179,9 @@ class HomeScreen extends StatelessWidget {
                         borderRadius:
                             BorderRadius.circular(AppConstant.inputBorder),
                         image: DecorationImage(
-                            image: NetworkImage(_userData.coverImageUrl!),
+                            image: CachedNetworkImageProvider(
+                                _userData.coverImageUrl!),
+                            // NetworkImage(_userData.coverImageUrl!),
                             fit: BoxFit.cover),
                       ),
                     ),
@@ -183,7 +191,9 @@ class HomeScreen extends StatelessWidget {
                       child: CircleAvatar(
                         radius: _rad,
                         backgroundColor: Colors.blue,
-                        backgroundImage: NetworkImage(_userData.imageUrl!),
+                        backgroundImage:
+                            CachedNetworkImageProvider(_userData.imageUrl!),
+                        //  NetworkImage(_userData.imageUrl!),
                       ),
                     )
                   ],
@@ -252,8 +262,10 @@ class HomeScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10.0.r),
                                 image: DecorationImage(
                                     image: (_storyModelList[index].image != "")
-                                        ? NetworkImage(
+                                        ? CachedNetworkImageProvider(
                                             _storyModelList[index].image!)
+                                        //  NetworkImage(
+                                        //     _storyModelList[index].image!)
                                         : const AssetImage(
                                                 'assets/images/cover.jpg')
                                             as ImageProvider<Object>,
@@ -266,8 +278,10 @@ class HomeScreen extends StatelessWidget {
                               child: CircleAvatar(
                                 radius: _rad,
                                 backgroundColor: Colors.blue,
-                                backgroundImage: NetworkImage(
+                                backgroundImage: CachedNetworkImageProvider(
                                     _userStoryDataList[index].imageUrl!),
+                                // NetworkImage(
+                                //     _userStoryDataList[index].imageUrl!),
                               ),
                             )
                           ],

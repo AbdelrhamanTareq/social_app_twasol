@@ -36,6 +36,7 @@ import 'package:social_app/ui/theme/app_theme.dart';
 import 'localiziation/app_localiziation.dart';
 import 'logic/cubits/home_cubit.dart';
 
+import 'logic/cubits/internet_connection_cubit.dart';
 import 'logic/cubits/settings_cubit.dart';
 
 void main() async {
@@ -86,6 +87,8 @@ class _MyAppState extends State<MyApp> {
           BlocProvider<SettingsCubit>(
             create: (context) => SettingsCubit(),
           ),
+          BlocProvider<ConnectionCubit>(
+              create: (context) => ConnectionCubit()..checkConnction()),
           // BlocProvider<FollowCubits>(
           //   create: (context) => FollowCubits(),
           // ),

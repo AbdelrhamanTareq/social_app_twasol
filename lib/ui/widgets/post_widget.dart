@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -99,7 +100,10 @@ class BuildPostWidget extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 25.0.r,
                     backgroundColor: Colors.amber,
-                    backgroundImage: NetworkImage(_data[index].userImage ?? ""),
+                    backgroundImage: CachedNetworkImageProvider(
+                      _data[index].userImage ?? "",
+                    ),
+                    // NetworkImage(_data[index].userImage ?? ""),
                   ),
                 ),
                 title: Text(
@@ -154,12 +158,20 @@ class BuildPostWidget extends StatelessWidget {
                           Radius.circular(10.r),
                         ),
                         child: Hero(
-                          tag: '${_data[index].id!}+$index',
-                          child: Image.network(
-                            _data[index].postImage ?? "",
-                            fit: BoxFit.cover,
-                          ),
-                        ),
+                            tag: '${_data[index].id!}+$index',
+                            child: CachedNetworkImage(
+                              imageUrl: _data[index].postImage ?? "",
+                              fit: BoxFit.cover,
+                              progressIndicatorBuilder:
+                                  (context, url, progress) => const Center(
+                                child: CircularProgressIndicator(),
+                              ),
+                            )
+                            // Image.network(
+                            //   _data[index].postImage ?? "",
+                            //   fit: BoxFit.cover,
+                            // ),
+                            ),
                       ),
                     ),
                   ),

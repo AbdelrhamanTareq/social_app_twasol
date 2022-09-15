@@ -48,12 +48,14 @@ dependencies:
   full_screen_image_null_safe: ^2.0.0
   uuid: ^3.0.5
   story_view: ^0.13.2
-
+  internet_connection_checker: ^0.0.1+1
+  
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.0.13
   firebase_messaging: ^11.2.0
+  cached_network_image: ^3.2.0
 
 dev_dependencies:
   flutter_test:

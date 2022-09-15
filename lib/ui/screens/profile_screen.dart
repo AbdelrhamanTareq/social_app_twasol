@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
@@ -312,10 +313,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         padding: EdgeInsets.all(4.0.w),
                                         child: CircleAvatar(
                                           radius: AppConstant.rad,
-                                          backgroundImage: NetworkImage(
-                                            // profielImgUrl,
-                                            _userData.imageUrl!,
-                                          ),
+                                          backgroundImage:
+                                              CachedNetworkImageProvider(
+                                                  _userData.imageUrl!),
+                                          //  NetworkImage(
+                                          //   // profielImgUrl,
+                                          //   _userData.imageUrl!,
+                                          // ),
                                         ),
                                       ),
                                     ),
@@ -365,8 +369,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               // color: Colors.red,
                               image: DecorationImage(
                                   image: (_ownerStoreies[index].image != "")
-                                      ? NetworkImage(
+                                      ? CachedNetworkImageProvider(
                                           _ownerStoreies[index].image!)
+                                      //  NetworkImage(
+                                      //     _ownerStoreies[index].image!)
                                       : const AssetImage(
                                               'assets/images/cover.jpg')
                                           as ImageProvider<Object>,
