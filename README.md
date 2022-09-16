@@ -1,10 +1,10 @@
-# social_app
+## social_app
 
 A new Flutter project.
 
-## Getting Started
+# Getting Started
 
-#### This is a social app made with flutter
+## This is a social app made with flutter and dart - bloc as state managemnet - firebase sevices for authentication and database -  shared preferences for loacal data
 
 ## Features
 
