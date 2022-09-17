@@ -29,8 +29,6 @@ import 'package:social_app/shared/app_constant.dart';
 import 'package:social_app/shared/cache_helper.dart';
 import 'package:social_app/ui/routes/route.dart';
 
-import 'package:social_app/ui/screens/wrapper_screen.dart';
-
 import 'package:social_app/ui/theme/app_theme.dart';
 
 import 'localiziation/app_localiziation.dart';

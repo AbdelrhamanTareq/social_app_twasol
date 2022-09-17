@@ -16,10 +16,7 @@ import 'package:social_app/logic/states/posts_states.dart';
 import 'package:social_app/logic/states/story_states.dart';
 import 'package:social_app/shared/app_constant.dart';
 import 'package:social_app/ui/routes/route.dart';
-import 'package:social_app/ui/screens/add_story_screen.dart';
 
-import 'package:social_app/ui/screens/setting_screen.dart';
-import 'package:social_app/ui/screens/storey_screen.dart';
 import 'package:social_app/ui/widgets/post_widget.dart';
 
 import 'package:social_app/ui/widgets/video_and_photo_widget.dart';

@@ -18,7 +18,6 @@ import 'package:social_app/ui/screens/setting_screen.dart';
 import 'package:social_app/ui/screens/sign_in_screen.dart';
 import 'package:social_app/ui/screens/sign_up_screen.dart';
 import 'package:social_app/ui/screens/storey_screen.dart';
-import 'package:social_app/ui/screens/wrapper_screen.dart';
 
 class AppRoute {
   final StoryCubit _storyCubit = StoryCubit();

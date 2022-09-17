@@ -89,5 +89,8 @@
 
     "likeb_by":"اعجب",
     "and":"و",
-    "others":"اخرين"
+    "others":"اخرين",
+
+    "no_internet_connection": "لا يوجد اتصال بالانترنت",
+    "try_again":"حاول مجددا"
 }

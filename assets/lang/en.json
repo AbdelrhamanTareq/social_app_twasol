@@ -112,6 +112,9 @@
 
     "likeb_by":"liked",
     "and":"and",
-    "others":"others"
+    "others":"others",
+
+    "no_internet_connection": "No internet connection",
+    "try_again":"Try again"
     
 }

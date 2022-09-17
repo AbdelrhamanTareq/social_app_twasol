@@ -1,21 +1,16 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:full_screen_image_null_safe/full_screen_image_null_safe.dart';
 import 'package:social_app/data/models/post_model.dart';
 import 'package:social_app/data/models/user_model.dart';
 import 'package:social_app/localiziation/localization_constant.dart';
-import 'package:social_app/logic/cubits/comments_cubit.dart';
-import 'package:social_app/logic/cubits/follow_cubit.dart';
-import 'package:social_app/logic/cubits/notification_cubit.dart';
 import 'package:social_app/logic/cubits/posts_cubit.dart';
-import 'package:social_app/logic/cubits/story_cubit.dart';
+
 import 'package:social_app/shared/app_constant.dart';
 import 'package:social_app/ui/routes/route.dart';
-import 'package:social_app/ui/screens/comments_screen.dart';
-import 'package:social_app/ui/screens/post_owner_profile.dart';
+
 import 'package:social_app/ui/theme/app_theme.dart';
 
 class BuildPostWidget extends StatelessWidget {

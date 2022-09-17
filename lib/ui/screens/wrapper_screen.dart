@@ -19,7 +19,7 @@
 //         log('${_user?.uid}');
 
 //         final Widget _homeScreen =
-//             (_user != null) ? const MainScreen() : SignUpScreen();
+//             (_user != null) ? const MainScreen1() : SignUpScreen();
 //         return _homeScreen;
 //       },
 //     );
